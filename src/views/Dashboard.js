@@ -1,26 +1,6 @@
-/*!
-
-=========================================================
-* Paper Dashboard React - v1.3.1
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/paper-dashboard-react
-* Copyright 2022 Creative Tim (https://www.creative-tim.com)
-
-* Licensed under MIT (https://github.com/creativetimofficial/paper-dashboard-react/blob/main/LICENSE.md)
-
-* Coded by Creative Tim
-
-=========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-*/
 import React from "react";
-// react plugin used to create charts
 import { Line, Pie } from "react-chartjs-2";
 import logo from "logo_new_2022.png";
-// reactstrap components
 import {
   Card,
   CardHeader,
@@ -30,12 +10,6 @@ import {
   Row,
   Col
 } from "reactstrap";
-// core components
-import {
-  dashboard24HoursPerformanceChart,
-  dashboardEmailStatisticsChart,
-  dashboardNASDAQChart
-} from "variables/charts.js";
 
 function Dashboard() {
   return (
@@ -54,11 +28,11 @@ function Dashboard() {
                   <Col md="8" xs="7">
                     <div className="numbers">
                       <p className="card-category">NOMBRE DEL ALUMNO:</p>
-                      <CardTitle tag="p">XXXXXXXX</CardTitle>
+                      <CardTitle tag="p">Kennya Orona</CardTitle>
                       <p className="card-category">FECHA:</p>
-                      <CardTitle tag="p">XXXXXXX</CardTitle>
+                      <CardTitle tag="p">05 septiembre</CardTitle>
                       <p className="card-category">CARRERA</p>
-                      <CardTitle tag="p">XXXXXXX</CardTitle>
+                      <CardTitle tag="p">DGS</CardTitle>
                       <p />
                     </div>
                   </Col>
@@ -66,12 +40,8 @@ function Dashboard() {
               </CardBody>
               <CardFooter>
                 <hr />
-                <div className="stats">
-                </div>
-                <a
-                  href="/"
-                  className="simple-text logo-mini"
-                >
+                <div className="stats"></div>
+                <a href="/" className="simple-text logo-mini">
                   <div className="logo-img">
                     <img src={logo} alt="react-logo" />
                   </div>
@@ -81,10 +51,18 @@ function Dashboard() {
           </Col>         
         </Row>
         <Row>
-          
-          
         </Row>
       </div>
+
+      {/* Footer */}
+      <footer>
+        <div className="credits ml-auto">
+          <div className="copyright">
+            &copy; {1900 + new Date().getYear()}, UTD{" "}
+            <i className="fa fa-heart heart" /> DERECHOS RESERVADOS Kennya Orona
+          </div>
+        </div>
+      </footer>
     </>
   );
 }
